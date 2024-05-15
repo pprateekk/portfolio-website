@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import prateek from "../assets/prateek.jpg";
+import mantech from "../assets/mantech.jpeg";
 import prof from "../assets/professor.png";
 
 export default function Coop() {
+  const [selectedTerm, setSelectedTerm] = useState("SUMMER 2023");
   const [activeSection, setActiveSection] = useState("intro");
 
+  //#region  Summer 2023
   const introduction = (
     <div className=" text-justify pt-4">
       <p>
@@ -167,6 +170,146 @@ export default function Coop() {
       <img src={prateek} alt="image"></img>
     </div>
   );
+  //#endregion Summer 2023
+
+  //#region Winter 2024
+  const introductionW24 = (
+    <div className=" text-justify pt-4">
+      <p>
+        For my Winter 2024 work term, I worked as a Software Developer at
+        MANTECH Inc. This work term report provides insights into my role as a
+        Software developer where I continue to contribute to MANTECH's new
+        project. I've spent the last four months immersed in learning new
+        software design principles like MVVM and gaining proficiency in .NET,
+        C#, and WPF technologies. Despite being new to C#, I've been able to
+        learn and adapt, expanding on the fundamental understanding of OOP that
+        I gained from my academic courses.
+      </p>
+    </div>
+  );
+
+  const aboutEmployerW24 = (
+    <div className="text-justify grid gap-10 pt-4 mx-auto">
+      <div className="">
+        <h2 className="text-xl font-bold font-playfair mb-4">MANTECH Inc.</h2>
+        <p>
+          Based in Guelph, ON., Canada, and its subsidiary in Fort Myers Beach,
+          FL, USA, MANTECH manufactures innovative water quality analysis
+          systems that help industrial facilities, laboratories and utilities
+          deliver clean, safe water and protect the environment. MANTECH’s
+          laboratory, online and portable systems are easy to use and deliver
+          fast, accurate results reducing and/or eliminating the use of harmful
+          chemicals, providing sustainable water quality solutions that are
+          trusted in more than 52 countries. MANTECH systems analyze thousands
+          of samples every day in environmental and soil laboratories,
+          industrial and municipal wastewater facilities, pulp and paper mills,
+          food and beverage manufacturing plants, laboratories and municipal
+          drinking water treatment plants. <br />
+        </p>
+        <h2 className="text-xl font-bold font-playfair mt-4 mb-4">
+          Their Mission Statement
+        </h2>
+        <p>
+          MANTECH manufactures analyzers for water and soil testing. Our mission
+          is to generate the highest quality results, in the shortest amount of
+          time, with green methods, using simple and smart analyzers. As a
+          result, our customers will have significant positive economic and
+          sustainable impacts on their businesses and communities.
+          <br />
+        </p>
+      </div>
+      <div className="container mx-auto ml-72">
+        <img src={mantech} alt="image"></img>
+      </div>
+    </div>
+  );
+
+  const jobDescriptionW24 = (
+    <div className="text-justify pt-4">
+      <p>
+        My primary focus revolved around the development of MANTECH's new
+        software project. This involved coding, software design, and tackling
+        both database tasks and front-end development. One of the most exciting
+        aspects of this work has been the opportunity to experiment with and
+        implement new software design principles such as MVVM
+        (Model-View-ViewModel), which has changed my approach to developing
+        extendable and efficient applications. In addition, I've been actively
+        involved in learning and using technologies like .NET Framework, C#, and
+        WPF (Windows Presentation Foundation), all of which were completely new
+        to me at the time.
+        <br />
+        <br />
+        Throughout this journey, I've learned valuable skills in resolving merge
+        conflicts, debugging software issues, implementing MVVM architecture,
+        and collaborating effectively with peers through code reviews. These
+        experiences not only improved my technical skills but also deepened my
+        understanding of software development practices.
+      </p>
+    </div>
+  );
+
+  const learningGoalsW24 = (
+    <div className="text-justify pt-4">
+      <ol className="list-decimal">
+        <li className="italic font-bold pt-2">
+          Develop a comprehensive understanding of WPF and deepen my knowledge
+          of C#
+        </li>
+        <p>
+          Reflecting on my goal to develop a comprehensive understanding of WPF
+          and deepen my knowledge of C#, I think I have made some good progress.
+          Throughout this period, I was actively coding - implementing different
+          features for the application and I believe this has helped me gain a
+          deeper understanding of WPF features and C#. However, I think there's
+          still room for improvement and this is what I'll be working on during
+          my time here in the upcoming work term.
+          <br></br>
+        </p>
+
+        <li className="italic font-bold pt-2">
+          Enhance my organizational and time management skills to efficiently
+          handle coding tasks and meet project deadlines
+        </li>
+        <p>
+          During the work term, I consistently kept a log of my weekly tasks.
+          This allowed me to allocate my time efficiently and ensured that I
+          stayed on track with my tasks. As I transition into another four-month
+          work term, I am excited to continue honing my time management and
+          organization skills.
+        </p>
+
+        <li className="italic font-bold pt-2">
+          Improve my oral communication skills to convey my technical ideas and
+          updates to the team
+        </li>
+        <p>
+          Through the past four months, we, as a software team, had a standup
+          meeting every day where I actively shared my perspective and ideas on
+          upcoming tasks, progress updates and challenges that I faced. I
+          believe I have observed noticeable improvements in my communication
+          skills, but I feel I still have room for growth in refining my
+          speaking skills to convey complex ideas. For my next term, I am
+          committed to continuing my efforts to further improve my speaking
+          skills.
+        </p>
+      </ol>
+    </div>
+  );
+
+  const conclusionW24 = (
+    <div className="flex flex-col items-center justify-center pt-4 ">
+      <p>
+        In conclusion, my experience at MANTECH has been both educational and
+        fulfilling. In addition to contributing to the project, I've encountered
+        challenges, made mistakes and gained valuable knowledge. I am grateful
+        for my colleagues' and supervisor's invaluable assistance. Looking
+        ahead, I am eager to continue contributing to the project and further
+        expanding my skills in software development.
+      </p>
+      <br />
+    </div>
+  );
+  //#endregion Winter 2024
 
   let sectionContent;
   if (activeSection === "intro") {
@@ -177,9 +320,36 @@ export default function Coop() {
     sectionContent = jobDescription;
   } else if (activeSection === "learnGoals") {
     sectionContent = learningGoals;
-  } else {
+  } else if (activeSection === "conc") {
     sectionContent = conclusion;
   }
+
+  const handleTermSelect = (term) => {
+    setSelectedTerm(term);
+    setActiveSection("intro");
+  };
+
+  const renderContent = () => {
+    const content = contentMap[selectedTerm];
+    return content ? content[activeSection] : null;
+  };
+
+  const contentMap = {
+    "SUMMER 2023": {
+      intro: introduction,
+      aboutEmp: aboutEmployer,
+      jobDes: jobDescription,
+      learnGoals: learningGoals,
+      conc: conclusion,
+    },
+    "WINTER 2024": {
+      intro: introductionW24,
+      aboutEmp: aboutEmployerW24,
+      jobDes: jobDescriptionW24,
+      learnGoals: learningGoalsW24,
+      conc: conclusionW24,
+    },
+  };
 
   return (
     <section id="coop" className="bg-neutral-200 py-10 mt-10">
@@ -188,8 +358,18 @@ export default function Coop() {
           Co-op Experience
         </h2>
         <h2 className="text-2xl font-playfair mb-4">
-          <button className="border-transparent hover:border-b hover:border-black transition duration-300">
+          <button
+            className="border-transparent hover:border-b hover:border-black transition duration-300"
+            onClick={() => handleTermSelect("SUMMER 2023")}
+          >
             SUMMER 2023
+          </button>
+          &nbsp; &nbsp;
+          <button
+            className="border-transparent hover:border-b hover:border-black transition duration-300"
+            onClick={() => handleTermSelect("WINTER 2024")}
+          >
+            WINTER 2024
           </button>
           &nbsp; &nbsp;
         </h2>
@@ -233,7 +413,7 @@ export default function Coop() {
             </h2>
 
             <p className="text-black text-lg font-playfair font-light border-t pt-2">
-              {sectionContent}
+              {renderContent()}
             </p>
           </div>
         </div>

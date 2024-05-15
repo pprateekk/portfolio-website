@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bootstrap from "../assets/icons/bootstrap.png";
 import cprog from "../assets/icons/cprog.png";
+import csharp from "../assets/icons/csharp.png";
 import cssimg from "../assets/icons/css.png";
 import docker from "../assets/icons/docker.png";
 import flask from "../assets/icons/flask.png";
@@ -10,6 +11,7 @@ import html from "../assets/icons/html.png";
 import java from "../assets/icons/java.png";
 import javascript from "../assets/icons/javascript.png";
 import mysql from "../assets/icons/mysql.png";
+import net from "../assets/icons/net.png";
 import python from "../assets/icons/python.png";
 import react from "../assets/icons/react.png";
 import tailwind from "../assets/icons/tailwind.png";
@@ -43,8 +45,16 @@ export default function About() {
       <p className="italic ">Software Developer </p>
 
       <ul className="list-disc pt-2">
-        <li>Add point here...</li>
-        <li>Add point here...</li>
+        <li>
+          Designing and developing new control/automation/reporting software for
+          MANTECH's lab products and systems, primarily in C#, and utilizing
+          .NET framework and Windows Presentation Foundation (WPF)
+        </li>
+        <li>Integrating new equipment into existing software systems.</li>
+        <li>
+          Collaborating effectively with team members, demonstrating strong
+          teamwork and communication skills.
+        </li>
       </ul>
       <br />
       <div className="flex justify-between text-lg font-bold">
@@ -108,6 +118,7 @@ export default function About() {
       <div className="flex flex-wrap gap-2 pt-2 pb-4">
         <img src={python} alt="python" />
         <img src={cprog} alt="c" />
+        <img src={csharp} alt="csharp" />
         <img src={java} alt="java" />
         <img src={javascript} alt="js" />
         <img src={html} alt="html" />
@@ -123,6 +134,7 @@ export default function About() {
         <img src={flask} alt="flask" />
         <img src={bootstrap} alt="bs" />
         <img src={tailwind} alt="tail" />
+        <img src={net} alt="netfr" />
       </div>
       <h4>Tools and Platforms</h4>
       <div className="flex flex-wrap gap-3 pt-2 pb-4">
