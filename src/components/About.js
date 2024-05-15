@@ -36,8 +36,20 @@ export default function About() {
   const experienceContent = (
     <div className="pt-4">
       <div className="flex justify-between text-lg font-bold">
+        <div className="flex-initial">MANTECH Inc.</div>
+        <div className="flex-initial text-right">Januray 2024 - Present</div>
+      </div>
+
+      <p className="italic ">Software Developer </p>
+
+      <ul className="list-disc pt-2">
+        <li>Add point here...</li>
+        <li>Add point here...</li>
+      </ul>
+      <br />
+      <div className="flex justify-between text-lg font-bold">
         <div className="flex-initial">University of Guelph</div>
-        <div className="flex-initial text-right">Sept 2023 - Present</div>
+        <div className="flex-initial text-right">Sept 2023 - December 2023</div>
       </div>
       <div className="flex justify-between">
         <div className="flex-initial italic">
@@ -67,6 +79,7 @@ export default function About() {
           resolve student queries.
         </li>
       </ul>
+
       <br />
       <div className="flex justify-between text-lg font-bold">
         <div className="flex-initial">University of Guelph</div>
