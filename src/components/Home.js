@@ -12,7 +12,7 @@ export default function Home() {
           Hello there! I'm Prateek
         </h2>
         <h3 className="text-black text-3xl font-cormorant font-medium pt-2">
-          I'm currently in my 3rd year of Computer Science at the University of
+          I'm currently in my 4th year of Computer Science at the University of
           Guelph.
         </h3>
         <br />

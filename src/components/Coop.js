@@ -176,14 +176,14 @@ export default function Coop() {
   const introductionW24 = (
     <div className=" text-justify pt-4">
       <p>
-        For my Winter 2024 work term, I worked as a Software Developer at
-        MANTECH Inc. This work term report provides insights into my role as a
-        Software developer where I continue to contribute to MANTECH's new
-        project. I've spent the last four months immersed in learning new
-        software design principles like MVVM and gaining proficiency in .NET,
-        C#, and WPF technologies. Despite being new to C#, I've been able to
-        learn and adapt, expanding on the fundamental understanding of OOP that
-        I gained from my academic courses.
+        For my Winter 2024 and Summer 2024 work terms, I worked as a Software
+        Developer at MANTECH Inc. This work term report provides insights into
+        my role as a Software developer where I continue to contribute to
+        MANTECH's new project. I've spent the last eight months immersed in
+        learning new software design principles like MVVM and gaining
+        proficiency in .NET, C#, and WPF technologies. Despite being new to C#,
+        I've been able to learn and adapt, expanding on the fundamental
+        understanding of OOP that I gained from my academic courses.
       </p>
     </div>
   );
@@ -256,13 +256,17 @@ export default function Coop() {
           of C#
         </li>
         <p>
-          Reflecting on my goal to develop a comprehensive understanding of WPF
-          and deepen my knowledge of C#, I think I have made some good progress.
-          Throughout this period, I was actively coding - implementing different
-          features for the application and I believe this has helped me gain a
-          deeper understanding of WPF features and C#. However, I think there's
-          still room for improvement and this is what I'll be working on during
-          my time here in the upcoming work term.
+          Over the course of my 8-month co-op term, I have advanced my
+          understanding of WPF (Windows Presentation Foundation) and deepened my
+          knowledge of C#. I gained hands-on experience with WPF's features,
+          such as data binding and custom controls, and became proficient in
+          applying these to real-world applications. Additionally, I was
+          introduced to essential software design principles, like the MVVM
+          (Model-View-ViewModel) architectural pattern and dependency injection,
+          which were new concepts for me. These principles not only enhanced my
+          technical skills but also improved the maintainability of the code I
+          worked on. I also focused on writing clean, readable code, which is
+          important for effective collaboration and long-term project success.
           <br></br>
         </p>
 
@@ -273,9 +277,9 @@ export default function Coop() {
         <p>
           During the work term, I consistently kept a log of my weekly tasks.
           This allowed me to allocate my time efficiently and ensured that I
-          stayed on track with my tasks. As I transition into another four-month
-          work term, I am excited to continue honing my time management and
-          organization skills.
+          stayed on track with my tasks. I am excited to continue honing my time
+          management and organizational skills as I progress in my software
+          developer journey.
         </p>
 
         <li className="italic font-bold pt-2">
@@ -283,14 +287,13 @@ export default function Coop() {
           updates to the team
         </li>
         <p>
-          Through the past four months, we, as a software team, had a standup
-          meeting every day where I actively shared my perspective and ideas on
-          upcoming tasks, progress updates and challenges that I faced. I
-          believe I have observed noticeable improvements in my communication
-          skills, but I feel I still have room for growth in refining my
-          speaking skills to convey complex ideas. For my next term, I am
-          committed to continuing my efforts to further improve my speaking
-          skills.
+          Reflecting on my oral communication skills, I believe I have made some
+          noticeable progress in the past 8 months. During our daily stand-up
+          meetings, I regularly provided updates on my progress. We also had our
+          developer's meeting, where I shared my perspective on upcoming tasks
+          and discussed the challenges I faced. Because of this, I think I
+          improved my ability to convey technical information and engage with
+          the team. I'm committed to continuing to work on these skills.
         </p>
       </ol>
     </div>
@@ -369,7 +372,7 @@ export default function Coop() {
             className="border-transparent hover:border-b hover:border-black transition duration-300"
             onClick={() => handleTermSelect("WINTER 2024")}
           >
-            WINTER 2024
+            WINTER 2024 & SUMMER 2024
           </button>
           &nbsp; &nbsp;
         </h2>

@@ -39,7 +39,9 @@ export default function About() {
     <div className="pt-4">
       <div className="flex justify-between text-lg font-bold">
         <div className="flex-initial">MANTECH Inc.</div>
-        <div className="flex-initial text-right">Januray 2024 - Present</div>
+        <div className="flex-initial text-right">
+          Januray 2024 - August 2024
+        </div>
       </div>
 
       <p className="italic ">Software Developer </p>
