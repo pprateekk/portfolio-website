@@ -44,17 +44,19 @@ export default function About() {
         </div>
       </div>
 
-      <p className="italic ">Software Developer </p>
+      <p className="italic ">
+        Software Developer | C#, .NET, WPF, XAML, SQLite
+      </p>
 
       <ul className="list-disc pt-2">
         <li>
-          Designing and developing new control/automation/reporting software for
-          MANTECH's lab products and systems, primarily in C#, and utilizing
-          .NET framework and Windows Presentation Foundation (WPF)
+          Designed and developed new control/automation/reporting software for
+          MANTECH's lab products and systems, primarily in C#, and utilized .NET
+          framework and Windows Presentation Foundation (WPF)
         </li>
-        <li>Integrating new equipment into existing software systems.</li>
+        <li>Integrated new equipment into existing software systems.</li>
         <li>
-          Collaborating effectively with team members, demonstrating strong
+          Collaborated effectively with team members, demonstrating strong
           teamwork and communication skills.
         </li>
       </ul>
@@ -98,17 +100,19 @@ export default function About() {
         <div className="flex-initial text-right">May 2023 - Sept 2023</div>
       </div>
 
-      <p className="italic ">Research Assistant </p>
+      <p className="italic ">
+        Research Assistant | Python, scikit-learn, NLTK, NumPy, Pandas, NLP
+      </p>
 
       <ul className="list-disc pt-2">
         <li>
           Automated the task of coding student feedback comments, analyzing and
-          categorizing them, saving significant time and effort for teachers.
+          categorizing them, saving significant time and effort for instructors.
         </li>
         <li>
-          Implemented data mining algorithms to identify patterns, keywords, and
-          specific criteria within comments, enabling automated assignment of
-          categories.
+          Implemented data mining algorithms and text mining techniques such as
+          unsupervised clustering and topic modeling to identify patterns within
+          comments for the purpose of categorization.
         </li>
       </ul>
     </div>
