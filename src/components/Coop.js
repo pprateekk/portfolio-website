@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import prateek from "../assets/prateek.jpg";
 import mantech from "../assets/mantech.jpeg";
 import prof from "../assets/professor.png";
+import el_hub from "../assets/el_hub.png";
+import el_hub2 from "../assets/el_hub2.png";
 
 export default function Coop() {
   const [selectedTerm, setSelectedTerm] = useState("SUMMER 2023");
@@ -314,6 +316,196 @@ export default function Coop() {
   );
   //#endregion Winter 2024
 
+  //#region Summer 2025
+  const introductionS25 = (
+    <div className=" text-justify pt-4">
+      <p>
+        For my Summer 2025 co-op work term, I worked as a Data Analyst with the
+        Experiential Learning Hub department of the University of Guelph, where
+        my main focus was making sense of large and messy datasets of co-op job
+        postings. A lot of my time went into cleaning and organizing the data,
+        like fixing issues with things like inconsistent city/province names or
+        missing student ID, etc, so that it could be used for analysis.
+        <br></br>
+        <br></br>
+        The focus was on transforming raw data into something meaningful and
+        then using it to highlight student and employer trends. I combined data
+        cleaning, statistical analysis and visualization (Tableau) with more
+        advanced techniques like NLP, and created dashboards that made the data
+        easy to interpret and act on.
+      </p>
+    </div>
+  );
+
+  const aboutTheEmpS25 = (
+    <div className="text-justify grid grid-cols-2 gap-10 pt-4 ">
+      <div className="">
+        <h2 className="text-xl font-bold font-playfair mb-4"></h2>
+        <p></p>
+        <h2 className="text-xl font-bold font-playfair mt-4 mb-4">
+          The Experiential Learning Hub (EL Hub)
+        </h2>
+        <p>
+          The University of Guelph is recognized for its strong commitment to
+          experiential learning, offering a wide range of hands-on learning
+          opportunities through its seven academic colleges and various
+          co-curricular programs. Central to these efforts is the Experiential
+          Learning Hub, which serves as the university’s focal point for
+          co-operative education, career development, and community-engaged
+          learning. <br></br>
+          <br />
+          The Experiential Learning Hub’s mission is to provide meaningful
+          professional and career development experiences that empower students
+          to discover their purpose and succeed as scholars, professionals, and
+          engaged global citizens.
+        </p>
+      </div>
+      <div className="container mx-auto">
+        <img src={el_hub} alt="image"></img>
+      </div>
+    </div>
+  );
+
+  const jobDescS25 = (
+    <div className="text-justify pt-4">
+      <p>
+        My work started with cleaning and preparing the co-op job postings data
+        from multiple academic years, dating back 10 years. The datasets were
+        messy with many irregularities and missing information. I spent a lot of
+        time fixing these issues, cleaning up formats, standardizing
+        city/province names, etc. Once the data was in good shape, I worked on
+        finding patterns and trends. I looked at how factors like GPA, gender,
+        or citizenship (to name a few) connected to the number of applications
+        and whether students were more or less likely to get interviews. To back
+        this up, I even ran regression models to see if the data confirmed those
+        trends.
+        <br />
+        <br />
+        After finding those insights, I focused on how to share them. I built
+        many worksheets and dashboards in Tableau that turned numbers into
+        stories, like how programs were spread across provinces, how salaries
+        compared, what students' withdrawal patterns looked like, and even how
+        application methods changed over time. These worksheets and dashboards
+        made it easy for anyone to explore the data without having to dive into
+        the Excel spreadsheets.
+        <br></br>
+        <br />
+        One of the most interesting parts of the role was trying out NLP. I used
+        a transformer-based model to go through thousands of job descriptions
+        and see which ones mention AI-related skills, and which included
+        language about equity, diversity and inclusion (EDI). That gave a whole
+        new perspective on the postings, not just the numbers, but the wording
+        employers chose and what it said about their priorities.
+        <br></br>
+        <br />
+        And it wasn't just that. My colleagues and I worked closely with
+        stakeholders across the department, meeting with the Director to align
+        on priorities, with co-op coordinators to understand what they wanted to
+        see on the dashboards, and even with other co-op students to provide
+        data that supported their own projects. At the end of the term, we
+        presented everything to the EL hub team, walking through our findings
+        and the dashboards. Those conversations and presentations weren't just
+        important as technical work, but they made sure the insights had a real
+        impact.
+        <br></br>
+        <br />
+        By the end of the work term, I had sharpened both my technical and
+        communication skills. It was a role that really showed me how data work
+        is about more than just analysis. It's about being able to tell stories
+        behind the numbers that would actually make an impact.
+      </p>
+    </div>
+  );
+
+  const learningGoalS25 = (
+    <div className="text-justify pt-4">
+      <ol className="list-decimal">
+        <li className="italic font-bold pt-2">
+          Become More Confident Communicating in Person and Presenting Data
+          Clearly
+        </li>
+        <p>
+          One of my goals this term was to get more confident speaking in
+          person, whether that was presenting data, sharing ideas in meetings,
+          or just chatting with coworkers. I made an effort to speak up more,
+          explain my work in a clearer way, and have more casual conversations
+          around the office. By the end of the term, I felt a lot more
+          comfortable communicating in different settings, and the positive
+          feedback I got on my presentations showed that I was heading in the
+          right direction.
+          <br></br>
+        </p>
+
+        <li className="italic font-bold pt-2">
+          Strengthen Problem-Solving Skills by Working Through Complex, Messy
+          Datasets
+        </li>
+        <p>
+          This term, I wanted to get better at solving problems independently by
+          working with messy or complex datasets and finding insights that could
+          support the team’s work. I had several opportunities to do just that,
+          from cleaning irregular data to uncovering trends that weren’t obvious
+          at first. I even got to help a teammate with a similar issue, which
+          reinforced what I’d learned. These experiences helped me build more
+          confidence in working with real-world data and taught me how to think
+          more critically when looking for meaningful insights.
+        </p>
+
+        <li className="italic font-bold pt-2">
+          Develop Foundational Leadership Skills by Taking Initiative and
+          Learning from Team Leads
+        </li>
+        <p>
+          Another one of my goals this term was to start building leadership
+          habits by observing how experienced team leads operate and by taking
+          initiative where I could. I paid close attention to how decisions were
+          made and how challenges were handled, and I looked for opportunities
+          to step up, whether by taking the lead on small tasks or helping
+          teammates when they were stuck. Presenting my work to the EL Hub teams
+          was a key moment where I took ownership and communicated outcomes
+          clearly. These experiences helped me grow more confident in taking
+          initiative and shaped a few leadership practices I hope to carry
+          forward.
+        </p>
+      </ol>
+    </div>
+  );
+
+  const conclusionS25 = (
+    <div className="text-justify grid grid-cols-2 gap-10 pt-4 ">
+      <div className="">
+        <p>
+          This co-op was an incredible opportunity to bridge technical skills
+          with real-world impact. One of the biggest takeaways was realizing
+          that numbers on their own aren't enough; it's the story you tell
+          behind those numbers that really makes an impact. Through meetings
+          with the Director, conversations with the co-op coordinators, and
+          presenting to the entire team, I grew much more confident in
+          communicating insights clearly and turning data into something
+          meaningful for others. <br></br> <br></br>
+          I'm deeply grateful to my supervisor for their guidance and support
+          throughout the term and to the Director and co-op coordinators for
+          trusting me with projects that mattered to the department. A big thank
+          you also goes to my fellow co-op students and colleagues, working
+          alongside such a collaborative and supportive team made this
+          experience not just a learning opportunity, but a truly enjoyable one.
+        </p>
+      </div>
+      {/* <div className="container mx-auto">
+        <img src={el_hub2} alt="image"></img>
+      </div> */}
+      <div className="container mx-auto">
+        <img
+          src={el_hub2}
+          alt="image"
+          className="w-[32rem] h-[32rem] object-contain"
+        />
+      </div>
+    </div>
+  );
+
+  //#endregion Summer 2025
+
   let sectionContent;
   if (activeSection === "intro") {
     sectionContent = introduction;
@@ -352,6 +544,13 @@ export default function Coop() {
       learnGoals: learningGoalsW24,
       conc: conclusionW24,
     },
+    "SUMMER 2025": {
+      intro: introductionS25,
+      aboutEmp: aboutTheEmpS25,
+      jobDes: jobDescS25,
+      learnGoals: learningGoalS25,
+      conc: conclusionS25,
+    },
   };
 
   return (
@@ -373,6 +572,13 @@ export default function Coop() {
             onClick={() => handleTermSelect("WINTER 2024")}
           >
             WINTER 2024 & SUMMER 2024
+          </button>
+          &nbsp; &nbsp;
+          <button
+            className="border-transparent hover:border-b hover:border-black transition duration-300"
+            onClick={() => handleTermSelect("SUMMER 2025")}
+          >
+            SUMMER 2025
           </button>
           &nbsp; &nbsp;
         </h2>
