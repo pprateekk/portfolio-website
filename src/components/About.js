@@ -38,6 +38,43 @@ export default function About() {
   const experienceContent = (
     <div className="pt-4">
       <div className="flex justify-between text-lg font-bold">
+        <div className="flex-initial">
+          Experiential Learning Hub, University of Guelph
+        </div>
+        <div className="flex-initial text-right">May 2025 - August 2025</div>
+      </div>
+
+      <p className="italic ">
+        Data Analyst | Python, Pandas, NumPy, MatplotLib, NLP, scikit-learn,
+        Tableau, MS Excel
+      </p>
+
+      <ul className="list-disc pt-2">
+        <li>
+          Consolidated and cleaned 10 years (2015-2025) of job postings data
+          (50k+ records) using Python, enhancing data integrity for geospatial
+          and longitudinal analysis.
+        </li>
+        <li>
+          Designed 5+ Tableau dashboards on student employment, salary trends,
+          program outcomes, and employment trends etc.{" "}
+        </li>
+        <li>
+          Performed NLP-based text mining on job descriptions, applying TF-IDF
+          vectorization, preprocessing pipelines, SBERT embeddings, and
+          zero-shot classification to detect AI-related and EDI-focused
+          language.
+        </li>
+        <li>
+          Conducted statistical modelling (logistic regression, probability
+          analysis) to evaluate the effect of GPA, demographics, and
+          applications on interview outcomes, presenting insights to 30+
+          departmental staff.
+        </li>
+      </ul>
+      <br />
+
+      <div className="flex justify-between text-lg font-bold">
         <div className="flex-initial">MANTECH Inc.</div>
         <div className="flex-initial text-right">
           Januray 2024 - August 2024
